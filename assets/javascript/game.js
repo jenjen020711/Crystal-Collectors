@@ -1,22 +1,12 @@
-$("#crystals").on("click", ".crystal-image", function() {
-    alert("You clicked a crystal!");
-});
 
-var targetnumber = 55;
-$("#number-to-guess").text(targetNumber);
+  
+  var crystals = $("#crystals");
 
-var counter = 0;
-var numberOptions = [10,11];
-var increment = numberOptions[Math.round(Math.random())];
-$("#crystals").on("click", ".crystal-image", function () {
-    counter += 10;
-    alert("Your new score is: " + counter);
+  var counter = 0;
 
-if (counter === targetNumber) {
-    alert("you win!");
-}
+  var numberOptions = [10, 5, 3, 7];
 
-else if (counter >= targetNumber) {
-    alert("you lose!");
-}
-});
+
+var random = Math.floor =(Math.random() + 101) +1;
+
+var crystals = Math.floor=(Math.random() *12) +1;
