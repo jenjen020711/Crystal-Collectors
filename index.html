@@ -7,18 +7,50 @@
     <title>Crystal Game</title>
     <style type="text/css"></style>
 
+<head>
+
+    <!-- Bootstrap CDN link. -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
+
 <body>
-    
-    <div id= "crystals">
-        <img class="crystal-image" src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg" alt="crystals">
+
+    <div class="row">
+
+        <h1>Target Number: <span id="number"></span></h1>
+
+        <p>Each crystal has a hidden value that will be revealed upon clicking. Click on the crystals to reveal the value of each crystal, each subsequent click will add to your total score, try to match your total value to the value at the top of the page
+            to win the game.</p>
+
+        <p id="wins">Wins: 0</p>
+        <p id="losses">Losses:0</p>
+        <p id="score">Score: </p>
     </div>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type = "text/javascript">
+    <div class="row">
+
+        <div class="crystals">
+
+            <img class="crystal" id="crystal1" src="assets/images/blue crystal.png" width="150" height="150">
+            <img class="crystal" id="crystal2" src="assets/images/green crystal.png" width="150" height="150">
+            <img class="crystal" id="crystal3" src="assets/images/red crystal.png" width="150" height="150">
+            <img class="crystal" id="crystal4" src="assets/images/yellow crystal.png" width="150" height="150">
+
+        </div>
+    </div>
 
 
-    </script>
+    <!-- JAVASCRIPT  -->
+    <!-- ========================================= -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
 </body>
+
 </html>
+

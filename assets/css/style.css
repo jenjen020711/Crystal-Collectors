@@ -1,4 +1,42 @@
-.crystal-image {
-    width: 300px;
-    height: 300px;
-  }
+body {
+  background-image: url("http://wallpaper-house.com/data/out/5/wallpaper2you_54396.jpg");
+  background-repeat: no-repeat;
+}
+
+h1 {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px;
+    background: palevioletred;
+}
+
+p {
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+  background: lightpink;
+}
+
+
+h3 {
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+  background: lightskyblue;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  padding-top: 50px;
+
+}
+.crystals {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  padding-top: 50px;
+  margin-right: auto;
+
+}
